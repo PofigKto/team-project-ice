@@ -52,7 +52,12 @@ color: var(--basic-title-color);
 @media screen and (max-width:767px){
  .hero__text{
     display: none;
-}   
+}
+.hero__menu-numbers{
+    display: none;
+}
+
+
 }
 @media screen and (min-width:768px){
 .hero{
@@ -73,6 +78,15 @@ color: var(--basic-title-color);
     position: absolute;
     top: 219px;
     left: 184px;
+}
+.hero__menu-numbers{
+    font-size: 28px;
+        line-height: 32px;
+        text-align: right;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    
+        color:var(--basic-title-color);
 }
 }
 @media screen and (min-width:1200px){
