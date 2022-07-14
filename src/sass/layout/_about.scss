@@ -4,7 +4,6 @@
 
 .about__subtitle {
     font-family: 'Titan One';
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 1.16;
@@ -19,7 +18,6 @@
 
 .about__title {
     font-family: 'Titan One';
-    font-style: normal;
     font-weight: 400;
     font-size: 34px;
     line-height: 1.14;
@@ -73,7 +71,6 @@
 
 .about__description {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
@@ -83,7 +80,6 @@
 
 .about__text {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
@@ -93,7 +89,6 @@
 
 .about__btn {
     font-family: 'DM Sans';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
@@ -104,12 +99,15 @@
 
     min-width: 176px;
 
+
     color: var(--basic-title-color);
 }
-
+.btn__text {
+    margin-right: 13px;
+}
 .about__icon {
-    width: 26px;
-    height: 32px;
+    width: 8px;
+    height: 10px;
 
     fill: currentColor;
 }
