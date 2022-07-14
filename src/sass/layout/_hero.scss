@@ -56,8 +56,8 @@ color: var(--basic-title-color);
 }
 @media screen and (min-width:768px){
 .hero{
-    padding-top: 102px;
-    padding-bottom: 190px;
+    padding-top: 20px;
+    padding-bottom: 316px;
 }
    
     .hero__text {
@@ -71,9 +71,20 @@ color: var(--basic-title-color);
 .hero__text-conteiner{
     width: 114px;
     position: absolute;
-    top: 287px;
+    top: 219px;
     left: 184px;
 }
+}
+@media screen and (min-width:1200px){
+    .hero {
+            padding-top: 74.9px;
+            padding-bottom: 316px;
+        }
 
-
+                .hero__text-conteiner {
+                    width: 114px;
+                    position: absolute;
+                    top: 383px;
+                    left:269px;
+                }
 }
