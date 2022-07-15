@@ -31,7 +31,7 @@
 }
 
 
-.about__img {
+.about__cow-img {
     height: auto;
     max-width: 100%;
     display: block;
@@ -43,14 +43,10 @@
 }
 
 .about__item {
-    width: 80%;
+    // width: 80%;
 
     &:not(:last-child) {
         margin-bottom: 26px;
-    }
-
-    &:not(:first-child) {
-        margin-bottom: 20px;
     }
 
 }
@@ -67,6 +63,11 @@
     left: 0;
 
     z-index: -1;
+}
+
+
+.about-list__text {
+    margin-bottom: 20px;
 }
 
 .about__description {
@@ -105,6 +106,7 @@
 .btn__text {
     margin-right: 13px;
 }
+
 .about__icon {
     width: 8px;
     height: 10px;
@@ -137,9 +139,10 @@
             margin-bottom: 18px;
         }
 
-        &:not(:first-child) {
-            margin-bottom: 40px;
-        }
+    }
+
+    .about-list__text {
+        margin-bottom: 40px;
     }
 
     .about__description-container {
@@ -149,8 +152,8 @@
 
     }
 
-    .about__img {
-        margin-bottom: 0px;
+    .about__cow-img {
+        margin: 0px;
 
     }
 
@@ -169,6 +172,9 @@
 
 
 @media screen and (min-width: 1200px) {
+    .about{
+        position: relative;
+    }
     .about__subtitle {
         font-size: 30px;
         font-weight: 400;
@@ -183,6 +189,14 @@
         margin-bottom: 60px;
     }
 
+    .about__description-container {
+        // justify-content: safe;
+        justify-content: left;
+    }
+    .about__cow-img {
+        display: block;
+        margin-right: 99px;
+    }
     .about__description {
         font-size: 16px;
         line-height: 1.75;
@@ -208,6 +222,8 @@
 
     .about__milk {
         display: block;
+        top: 20%;
+        left: 0;
     }
 
 }
