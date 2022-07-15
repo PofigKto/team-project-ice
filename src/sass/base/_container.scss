@@ -2,7 +2,7 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 @media screen and (min-width: 480px) {
@@ -17,6 +17,9 @@
         padding-right: 32px;
         width: 768px;
     }
+    .container--no-padding-left {
+        padding-left: 0px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -24,5 +27,8 @@
         padding-left: 16px;
         padding-right: 16px;
         width: 1200px;
+    }
+    .container--no-padding-left {
+        padding-left: 0px;
     }
 }
