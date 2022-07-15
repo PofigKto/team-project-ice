@@ -1,9 +1,21 @@
 .hero{
     background-color:var(--background-cream);
-  margin-top: 60px;
     padding-bottom: 158px;
-background-image: url('./images/Ice-hero/main-icecream-mobile.png');
-}
+    padding-top: 88px;
+
+background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-mobile.png');
+background-size: 171px 410px, 346px 344px;
+background-repeat:no-repeat;
+background-position: 70% 50%;}
+
+/*@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:
+           url('../images/Ice-hero/main-icecream@2x-mobile.png'), url('../images/Ice-hero/ellipse@2x-mobile.png');
+    }
+}*/
 .hero__title{
     align-items: center;
     margin-bottom: 20px; 
@@ -57,13 +69,16 @@ color: var(--basic-title-color);
 .hero__menu-numbers{
     display: none;
 }
-
-
 }
 @media screen and (min-width:768px){
+   
 .hero{
-    padding-top: 20px;
-    padding-bottom: 316px;
+    margin-top: 20px;
+
+    background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
+        background-size: 143px 336px, 335px 333px;
+        background-repeat: no-repeat;
+        background-position: 60% 50%;
 }
    .hero__title{
 font-size: 22px;
@@ -82,7 +97,7 @@ font-size: 22px;
 .hero__text-conteiner{
     width: 114px;
     position: absolute;
-    top: 456px;
+    top: 287px;
     left: 184px;
 }
 .hero__menu-numbers{
