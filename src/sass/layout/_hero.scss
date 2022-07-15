@@ -1,21 +1,22 @@
 .hero{
     background-color:var(--background-cream);
-    padding-top: 136px;
+  margin-top: 60px;
     padding-bottom: 158px;
-
+background-image: url('./images/Ice-hero/main-icecream-mobile.png');
 }
 .hero__title{
     align-items: center;
     margin-bottom: 20px; 
     font-family: 'Titan One';
         font-style: normal;
-        font-size: 26px;
+    font-size: 26px;
         line-height: 1.1;
         letter-spacing: 0.04em;
         color: #FFFFFF;
         text-transform: uppercase;
 }
 .hero__title-part{
+font-size: 48px;
     color:var(--basic-title-color);
 }
 .hero__menu{
@@ -64,8 +65,13 @@ color: var(--basic-title-color);
     padding-top: 20px;
     padding-bottom: 316px;
 }
-   
+   .hero__title{
+font-size: 22px;
+   }
+   .hero__title-part {
+    font-size: 34px;}
     .hero__text {
+        position: relative;
     font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
@@ -76,17 +82,28 @@ color: var(--basic-title-color);
 .hero__text-conteiner{
     width: 114px;
     position: absolute;
-    top: 219px;
+    top: 456px;
     left: 184px;
 }
 .hero__menu-numbers{
-    font-size: 28px;
-        line-height: 32px;
-        text-align: right;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
+font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+font-size: 28px;
+    line-height: 1.1;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     
         color:var(--basic-title-color);
+}
+.hero__item-numbers-text{
+font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: right;
 }
 .hero__item-numbers:not(:last-child){
   margin-bottom: 17px; 
