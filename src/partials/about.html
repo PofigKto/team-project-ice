@@ -1,5 +1,5 @@
 <section class="section about-section about">
-    <div class="container">
+    <div class="container about__container">
         <h3 class="about__subtitle">tradition and love</h3>
         <h2 id="made-link" class="about__title">how it&#39;s made?</h2>
         <div class="about__description-container">
@@ -14,37 +14,37 @@
                     <img class="about__img" src="./images/ice-about/cow-mobile.png" alt="корова">
                 </picture>
             </div>
+            <div class="about__milk">
+                <picture>
+                    <source srcset="./images/ice-about/milk-desktop.png 1x, ./images/ice-about/milk-desktop@2x.png 2x"
+                        media="(min-width: 1200px)">
+                    <source srcset="./images/ice-about/milk-mobile.png 1x, ./images/ice-about/milk-mobile@2x.png 2x"
+                        media="(min-width: 480px)">
+                    <img class="about__milk" src="./images/ice-about/milk-mobile.png" alt="капли молока">
+                </picture>
+            </div>
             <ul class="about__list list">
-                <div class="about-list__picture">
-                    <picture>
-                        <source srcset="./images/ice-about/milk-desktop.png 1x, ./images/ice-about/milk-desktop@2x.png 2x"
-                            media="(min-width: 1200px)">
-                        <source srcset="./images/ice-about/milk-mobile.png 1x, ./images/ice-about/milk-mobile@2x.png 2x"
-                            media="(min-width: 480px)">
-                        <img class="about__milk" src="./images/ice-about/milk-mobile.png" alt="капли молока">
-                    </picture>
-                </div>
-                <div class="about-list__text">
-                    <li class="about__item">
-                        <p class="about__description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+                <li class="about__item">
+                    <p class="about__description">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
                             cursus, faucibus
                             lorem eget, egestas eros.
                             Maecenas eleifend erat at justo fringilla.</p>
-                    </li>
-                    <li class="about__item">
-                        <p class="about__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
+                </li>
+                <li class="about__item">
+                    <p class="about__text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
                             rhoncus orci
                             in imperdiet placerat.
                             Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
                             tincidunt.
                             Aliquam erat volutpat. Aenean accumsan.</p>
-                    </li>
-                </div>
-                <button class="btn btn-light about__btn" type="button"><span class="btn__text">Read more</span>
-                    <svg class="about__icon" width="8" height="10">
-                        <use href="./images/symbol-defs.svg#icon-button_arrow_icon"></use>
-                    </svg>
-                </button>
+                </li>
+                <li class="about__item">
+                    <a class="btn btn-light about__btn" href="#"><span class="btn__text">Read more</span>
+                        <svg class="about__icon" width="8" height="10">
+                            <use href="./images/symbol-defs.svg#icon-button_arrow_icon"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
