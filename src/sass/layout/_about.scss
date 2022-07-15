@@ -1,5 +1,11 @@
 .about {
     background-color: var(--background-section);
+    
+}
+
+.about__container {
+   
+   position: relative;
 }
 
 .about__subtitle {
@@ -43,7 +49,7 @@
 }
 
 .about__item {
-    // width: 80%;
+    width: 78%;
 
     &:not(:last-child) {
         margin-bottom: 26px;
@@ -51,18 +57,19 @@
 
 }
 
+
+.about__milk {
+
+    position: absolute;
+    top: 67%;
+    left: 10px;
+    width: 90%;
+ 
+}
 .about__list {
 
     position: relative;
     z-index: 2;
-}
-
-.about__milk {
-    position: absolute;
-    top: 21.5%;
-    left: 0;
-
-    z-index: -1;
 }
 
 
@@ -89,8 +96,6 @@
 }
 
 .about__btn {
-    font-family: 'DM Sans';
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
     display: flex;
@@ -98,7 +103,7 @@
     justify-content: center;
     text-align: center;
 
-    min-width: 176px;
+    width: 176px;
 
 
     color: var(--basic-title-color);
@@ -190,7 +195,7 @@
     }
 
     .about__description-container {
-        // justify-content: safe;
+        
         justify-content: left;
     }
     .about__cow-img {
@@ -216,14 +221,11 @@
 
     }
 
-    .about__list {
-        position: static;
-    }
-
     .about__milk {
         display: block;
-        top: 20%;
+        top: 26%;
         left: 0;
+        width: 100%;
     }
 
 }
