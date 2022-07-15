@@ -14,7 +14,7 @@
 (min-resolution: 2dppx) {
     .hero {
         background-image:
-           url('../images/Ice-hero/main-icecream@2x-mobile.png'), url('../images/Ice-hero/ellipse@2x-mobile.png');
+           url('../images/Ice-hero/main-icecream@2x-mobile.png'), url('../images/Ice-hero/ellipse-mobile@2x.png');
     }
 }*/
 .hero__title {
@@ -86,7 +86,6 @@
 
     .hero {
         margin-top: 20px;
-
         background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
         background-size: 143px 336px, 335px 333px;
         background-repeat: no-repeat;
@@ -143,6 +142,15 @@
     .hero__item-numbers:not(:last-child) {
         margin-bottom: 17px;
     }
+
+.women-picture{
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    top: 265px;
+    left: 546px;
+}
+
 }
 
 @media screen and (min-width:1200px) {
