@@ -3,20 +3,20 @@
     padding-bottom: 158px;
     padding-top: 88px;
 
-    background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-mobile.png');
+    background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url(../images/Ice-hero/elipse-mobile.png);
     background-size: 171px 410px, 346px 344px;
     background-repeat: no-repeat;
     background-position: 70% 50%;
 }
 
-/* @media screen and (min-device-pixel-ratio: 2),
+ @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
         background-image:
-           url('../images/Ice-hero/main-icecream@2x-mobile.png'), url('../images/Ice-hero/ellipse@2x-mobile.png');
+           url('../images/Ice-hero/main-icecream@2x-mobile.png');
     }
-}*/
+}
 .hero__title {
     align-items: center;
     margin-bottom: 20px;
