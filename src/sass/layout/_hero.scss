@@ -4,10 +4,7 @@
     padding-bottom: 158px;
     padding-top: 88px;
 
-    background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-tablet.png');
-    background-size: 171px 410px, 346px 344px;
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
+
 }
 /*
  @media screen and (min-device-pixel-ratio: 2),
@@ -67,9 +64,7 @@
 .hero__link-wite {
     color: #FFFFFF;
 
-    .hero__conteiner-relative {
-        position: relative;
-    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -86,23 +81,37 @@
        .milk-picture{
         display: none;
        }
+       .hero{
+            background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-tablet.png');
+                background-size: 171px 410px, 346px 344px;
+                background-repeat: no-repeat;
+                background-position:60% 97%, 60% 50%;
+       }
 }
 
 @media screen and (min-width:768px) {
 .hero__conteiner{
-    width: 768px;
-    height: 416px;
+    margin-right: auto;
+    margin-left: auto;
+       width: 768px;
+position: relative;
+}
+.hero__conteiner-position{
+    display: flex;
+    justify-content: space-between;
+   
+
 }
     .hero {
-        height: 416px;
-        margin-top: 20px;
+
      margin-left: auto;
      margin-right: auto;
-
-        background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
+    background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
         background-size: 143px 336px, 335px 333px;
         background-repeat: no-repeat;
-        background-position: 60% 50%;
+        background-position: 50% 97%, 50% 50% ;
+
+  
     }
 
     .hero__title {
@@ -114,7 +123,6 @@
     }
 
     .hero__text {
-        position: relative;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
@@ -126,8 +134,8 @@
     .hero__text-conteiner {
         width: 114px;
         position: absolute;
-        top: 287px;
-        left: 184px;
+        top: 175px;
+        left: 167px;
     }
 
     .hero__menu-numbers {
@@ -158,15 +166,15 @@
         width: 190px;
         height: 150px;
         position: absolute;
-        top: 265px;
-        left: 546px;
+        top: 150px;
+        right: 32px;
     }
 .milk-picture{
     width: 152px;
     height: 154px;
     position: absolute;
-    top: 246px;
-    left:32px;
+    top: 135px;
+    left:0;
 }}
 
 @media screen and (min-width:1280px) {
