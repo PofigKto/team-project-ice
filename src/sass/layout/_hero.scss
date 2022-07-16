@@ -1,27 +1,129 @@
-.hero {
-    background-color: var(--background-cream);
-    padding-bottom: 158px;
-    padding-top: 88px;
 
-    background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url(../images/Ice-hero/elipse-mobile.png);
-    background-size: 171px 410px, 346px 344px;
-    background-repeat: no-repeat;
-    background-position: 70% 50%;
+/*================================HEADER===================================*/
+
+
+.page-header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
- @media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .hero {
-        background-image:
-           url('../images/Ice-hero/main-icecream@2x-mobile.png');
+.navigation__list {
+    display: none;
+}
+
+.header__button {
+    display: none;
+    width: 160px;
+    height: 44px;
+    border-radius: 22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    border: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    text-align: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: #fff;
+    color: var(--basic-title-color);
+
+    &:hover {
+        background-color: #ECEBEB;
     }
 }
+
+
+
+@media screen and (min-width: 768px) {
+
+    .page-header__container {
+        justify-content: space-between;
+    }
+
+    .header-buttons__container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .header__button {
+        display: block;
+        margin-left: 32px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .page-header__container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .navigation__list {
+        display: flex;
+        margin-left: 128px;
+    }
+
+    .navigation__item:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    .navigation__link {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.31;
+        color: #FFFFFF;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: var(--basic-title-color);
+        }
+    }
+
+    .mobile-menu__open-button {
+        display: none;
+    }
+
+    .header__button {
+        display: block;
+        margin-left: 141px;
+    }
+}
+
+
+
+
+
+
+
+
+/*================================= HERO ===============================*/
+
+
+
+.hero {
+ 
+    width: 100%;
+    background-color: var(--background-cream);
+}
+
+
 .hero__title {
     align-items: center;
     margin-bottom: 20px;
     font-family: 'Titan One';
-    font-style: normal;
     font-size: 26px;
     line-height: 1.1;
     letter-spacing: 0.04em;
@@ -67,9 +169,7 @@
 .hero__link-wite {
     color: #FFFFFF;
 
-    .hero__conteiner-relative {
-        position: relative;
-    }
+
 }
 
 @media screen and (max-width:767px) {
@@ -80,18 +180,82 @@
     .hero__menu-numbers {
         display: none;
     }
+
+    .women-picture {
+        display: none;
+    }
+
+    .milk-picture {
+        display: none;
+    }
+
+    .hero {
+        background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-tablet.png');
+        background-size: 171px 410px, 346px 344px;
+        background-repeat: no-repeat;
+        background-position: 60% 97%, 60% 50%;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image:
+                url('../images/Ice-hero/main-icecream@2x-mobile.png'), url('../images/Ice-hero/ellipse@2x-tablet.png');
+        }
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .hero__conteiner {
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            height: 416px;
+            position: relative;
+        }
+    .hero {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
+        background-size: 143px 336px, 335px 333px;
+        background-repeat: no-repeat;
+        background-position: 50% 97%, 50% 50%;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image:
+                url('../images/Ice-hero/main-icecream@2x-tablet.png'), url('../images/Ice-hero/ellipse@2x-tablet.png');
+        }
+    }
+
+    .women-picture {
+        width: 190px;
+        height: 150px;
+        position: absolute;
+        top: 150px;
+        right: 32px;
+    }
+
+    .milk-picture {
+        width: 152px;
+        height: 154px;
+        position: absolute;
+        top: 135px;
+        left: 0;
+    }
 }
 
 @media screen and (min-width:768px) {
 
-    .hero {
-        margin-top: 20px;
-
-        background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
-        background-size: 143px 336px, 335px 333px;
-        background-repeat: no-repeat;
-        background-position: 60% 50%;
+    .hero__conteiner-position {
+        display: flex;
+        justify-content: space-between;
     }
+
 
     .hero__title {
         font-size: 22px;
@@ -102,7 +266,6 @@
     }
 
     .hero__text {
-        position: relative;
         font-family: 'DM Sans';
         font-style: normal;
         font-weight: 400;
@@ -114,8 +277,8 @@
     .hero__text-conteiner {
         width: 114px;
         position: absolute;
-        top: 287px;
-        left: 184px;
+        top: 175px;
+        left: 167px;
     }
 
     .hero__menu-numbers {
@@ -129,6 +292,7 @@
         text-transform: uppercase;
 
         color: var(--basic-title-color);
+
     }
 
     .hero__item-numbers-text {
@@ -138,17 +302,71 @@
         font-size: 14px;
         line-height: 1.2;
         text-align: right;
+        color: #FFFFFF;
     }
 
-    .hero__item-numbers:not(:last-child) {
-        margin-bottom: 17px;
+    .hero__item-numbers {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: -10;
+            right: -10;
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            -moz-border-radius: 15px;
+            -webkit-border-radius: 15px;
+            border-radius: 15px;
+            background-color: #FFFFFF;
+            z-index: 2;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+
     }
+
 }
 
-@media screen and (min-width:1200px) {
+.hero__button {
+    background-color: transparent;
+    border: transparent;
+    margin-top: 7px;
+}
+
+@media screen and (min-width:1280px) {
+    .hero__conteiner-position {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero__conteiner {
+        width: 100%;
+        height: 664px;
+        position: relative;
+    }
+
     .hero {
-        padding-top: 74.9px;
-        padding-bottom: 316px;
+       
+        margin-left: auto;
+        margin-right: auto;
+
+        background-image: url('../images/Ice-hero/main-icecream-desctop.png'), url('../images/Ice-hero/ellipse-desktop.png');
+        background-size: 236px 557px, 534px 534px;
+        background-repeat: no-repeat;
+        background-position: 50% 97%, 50% 50%;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image:
+                url('../images/Ice-hero/main-icecream@2x-desctop.png'), url('../images/Ice-hero/ellipse@2x-desktop.png');
+        }
     }
 
     .hero__text-conteiner {
@@ -156,5 +374,25 @@
         position: absolute;
         top: 383px;
         left: 269px;
+    }
+
+    .women-picture {
+        width: 304px;
+        height: 241px;
+        position: absolute;
+        top: 265px;
+        right: 56px;
+    }
+
+    .milk-picture {
+        width: 213px;
+        height: 216px;
+        position: absolute;
+        top: 388px;
+        left: 56px;
+    }
+
+    .hero__button {
+        margin-top: 20px;
     }
 }
