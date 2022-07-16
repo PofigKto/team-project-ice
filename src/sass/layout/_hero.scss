@@ -6,6 +6,7 @@
 
 
 }
+
 /*
  @media screen and (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
@@ -75,43 +76,48 @@
     .hero__menu-numbers {
         display: none;
     }
-        .women-picture{
-            display: none;
-        }
-       .milk-picture{
+
+    .women-picture {
         display: none;
-       }
-       .hero{
-            background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-tablet.png');
-                background-size: 171px 410px, 346px 344px;
-                background-repeat: no-repeat;
-                background-position:60% 97%, 60% 50%;
-       }
+    }
+
+    .milk-picture {
+        display: none;
+    }
+
+    .hero {
+        background-image: url('../images/Ice-hero/main-icecream-mobile.png'), url('../images/Ice-hero/ellipse-tablet.png');
+        background-size: 171px 410px, 346px 344px;
+        background-repeat: no-repeat;
+        background-position: 60% 97%, 60% 50%;
+    }
 }
 
 @media screen and (min-width:768px) {
-.hero__conteiner{
-    margin-right: auto;
-    margin-left: auto;
-       width: 768px;
-position: relative;
-}
-.hero__conteiner-position{
-    display: flex;
-    justify-content: space-between;
-   
+    .hero__conteiner {
+        margin-right: auto;
+        margin-left: auto;
+        width: 768px;
+        position: relative;
+    }
 
-}
+    .hero__conteiner-position {
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
     .hero {
 
-     margin-left: auto;
-     margin-right: auto;
-    background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../images/Ice-hero/main-icecream-tablet.png'), url('../images/Ice-hero/ellipse-tablet.png');
         background-size: 143px 336px, 335px 333px;
         background-repeat: no-repeat;
-        background-position: 50% 97%, 50% 50% ;
+        background-position: 50% 97%, 50% 50%;
 
-  
+
     }
 
     .hero__title {
@@ -144,7 +150,7 @@ position: relative;
         font-weight: 400;
         font-size: 28px;
         line-height: 1.1;
-        text-align:right;
+        text-align: right;
         letter-spacing: 0.04em;
         text-transform: uppercase;
 
@@ -159,9 +165,11 @@ position: relative;
         line-height: 1.2;
         text-align: right;
     }
+
     .hero__item-numbers:not(:last-child) {
         margin-bottom: 17px;
     }
+
     .women-picture {
         width: 190px;
         height: 150px;
@@ -169,21 +177,23 @@ position: relative;
         top: 150px;
         right: 32px;
     }
-.milk-picture{
-    width: 152px;
-    height: 154px;
-    position: absolute;
-    top: 135px;
-    left:0;
-}}
+
+    .milk-picture {
+        width: 152px;
+        height: 154px;
+        position: absolute;
+        top: 135px;
+        left: 0;
+    }
+}
 
 @media screen and (min-width:1280px) {
     .hero {
         width: 1280px;
-            height: 664px;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
+        height: 664px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 74.9px;
         padding-bottom: 316px;
     }
@@ -194,19 +204,20 @@ position: relative;
         top: 383px;
         left: 269px;
     }
-         .women-picture {
-             width: 304px;
-             height: 241px;
-             position: absolute;
-             top: 265px;
-             right: 56px;
-         }
-    
-         .milk-picture {
-             width: 213px;
-             height: 216px;
-             position: absolute;
-             top: 388px;
-             left: 56px;
-         }
+
+    .women-picture {
+        width: 304px;
+        height: 241px;
+        position: absolute;
+        top: 265px;
+        right: 56px;
+    }
+
+    .milk-picture {
+        width: 213px;
+        height: 216px;
+        position: absolute;
+        top: 388px;
+        left: 56px;
+    }
 }
