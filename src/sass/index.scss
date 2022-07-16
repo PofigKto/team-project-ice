@@ -1,6 +1,25 @@
 @import './common';
 
 
+@import './base/container';
+@import './base/section';
+@import './base/variables';
+
+
+
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/root';
+@import './utils/visually-hidden';
+
+
+
+@import './components/buttons';
+@import './components/mobile-menu';
+@import './components/section-title';
+
+
+
 @import './layout/hero';
 @import './layout/products';
 @import './layout/about';
@@ -12,18 +31,11 @@
 @import './layout/backdrop';
 
 
-@import './base/container';
-@import './base/section';
-@import './base/variables';
 
-@import './utils/mixins';
-@import './utils/placeholders';
-@import './utils/root';
-@import './utils/visually-hidden';
 
-@import './components/buttons';
-@import './components/mobile-menu';
-@import './components/section-title';
+
+
+
 
 
 
