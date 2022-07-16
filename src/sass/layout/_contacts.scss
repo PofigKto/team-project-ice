@@ -1,15 +1,15 @@
-.contacts {
-    background-color: #FFF5F6;
-}
+.container {
+    background-image: linear-gradient(to top, #FFF5F6 80%, #FFFFFF 20%);
+ }
 
-.contacts_sections {
-background: FFF5F6;
+.contacts_list__section {
+background: #FFFFFF;
 box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 border-radius: 24px;
 margin-bottom: 32px;
 }
 
-.cafe_type {
+.contacts_list__cafe_type {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ margin-bottom: 32px;
     margin-bottom: 20px;
 }
 
-.cafe_type_foodtruck {
+.contacts_list__cafe_type_foodtruck {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,11 +43,11 @@ margin-bottom: 32px;
     margin-bottom: 20px;
 }
 
-.contacts_section_content {
+.contacts_list__content {
     padding: 40px 32px;
 }
 
-.contacts_city_and_desription::after {
+.contacts_list__city_and_desription::after {
 content: "";
 width: 100%;
 height: 0px;
@@ -57,13 +57,13 @@ margin-bottom: 24px;
 margin-top: 24px;
 }
 
-.cafe_description {
+.contacts_list__cafe_description {
     font-size: 12px;
     line-height: 1.5;
     color: #907E82;
 }
 
-.cafe_schedule::after {
+.contacts_list__cafe_schedule::after {
         content: "";
         width: 100%;
         height: 0px;
@@ -73,23 +73,23 @@ margin-top: 24px;
         margin-top: 24px;
 }
 
-.cafe_schedule_weekdays {
+.contacts_list__cafe_schedule_weekdays {
     margin-bottom: 8px;
 }
 
-.cafe_schedule_day {
+.contacts_list__cafe_schedule_day {
 font-size: 12px;
 line-height: 1.8;
 color: #000000;
 }
 
-.cafe_schedule_time {
+.contacts_list__cafe_schedule_time {
 font-size: 12px;
 line-height: 1.8;
 color: #FFA5BA;
 }
 
-.cafe_contacts_link {
+.cafe_contacts__link {
 display: block;
 font-size: 12px;
 line-height: 1.5;
@@ -98,20 +98,12 @@ color: #907E82;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.cafe_contacts_link:hover,
-.cafe_contacts_link:focus {
+.cafe_contacts__link:hover,
+.cafe_contacts__link:focus {
     color: #d41443;
 }
 
-.btn:hover,
-.btn:focus {
-    background-color: #D41342;
-    color: #fff;
-}
-
-.btn_icon {color: #D41342;}
-
-.city {
+.contacts_list__city {
 margin-bottom: 8px;
 font-size: 12px;
 line-height: 1.8;
@@ -129,6 +121,10 @@ color: #000000;
     padding-right: 13px;
 }
 
+.btn-red {
+    margin-bottom: 10px;
+}
+
 
 .contacts_btn {
 display: flex;
@@ -137,6 +133,67 @@ justify-content: center;
 flex-direction:column;
 }
 
+// _______________Modal Window _____________
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); }
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    .modal {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 528px;
+    height: 581px;
+    background: white;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+}
+
+.modal-close-button { 
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    }
+
+.modal-close-button-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        fill: #2196F3;
+    }
+}
+
+
+// _______________//Modal Window _____________
+
 @media screen and (min-width: 768px) {
    
     .contacts_list {
@@ -144,9 +201,15 @@ flex-direction:column;
     }
     .contacts_btn {
        flex-direction: row;
+       padding-bottom: 40px;
     }
 
     .btn {margin-right: 12px;}
+    .btn-red {
+        margin-bottom: 0px;
+    }
+
 
     .contacts_list {margin-bottom: 60px;}
-    }
+
+}
