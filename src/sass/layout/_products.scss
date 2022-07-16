@@ -1,0 +1,117 @@
+
+
+.label-text {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--subtitle-color);
+    margin-bottom: 18px;
+}
+
+.products__section-tittle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--basic-title-color);
+    margin-bottom: 160px;
+}
+
+.products__description {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--card-tittle-color);
+    width: 200px;
+    
+  
+}
+
+.products__tittle {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color:var(--card-tittle-color);
+    margin-top: 156px;
+
+    
+}
+
+.products__ice-cream {
+    border-radius: 24px;
+    background-color: var(--background-cream);
+    
+}
+.products__coffee {
+    border-radius: 24px;
+    background-color: var(--background-coffee);
+}
+.products__milkshakes {
+    border-radius: 24px;
+    background-color: var(--background-milkshakes);
+}
+.products__arrow {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 32px;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+}
+.products__poits {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 127px;
+    margin-right: 127px;
+}
+.products__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.products__item {
+    width: 280px;
+    height: 478px;
+    position: relative;
+    &:not(:last-child){
+        margin-bottom: 160px;
+    }
+}
+
+.products__box {
+    position: absolute;
+    top: -30%;
+    left: 0;
+}
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+
+}

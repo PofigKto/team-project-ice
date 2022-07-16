@@ -3,57 +3,68 @@
     <div class="container">
         <p class="label-text">100% natural</p>
         <h2 class="products__section-tittle">products</h2>
-        <ul class="products">
-            <li class="products__item">
-                <h3 class="products__tittle">ice cream</h3>
-                <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <picture>
-                        <source srcset="./images/products-webp/ice-cream-products-desktop-webp.webp 1x, ./images/products-webp/ice-cream-products-desktop-@2x-webp.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
+        <ul class="products__list">
+            <li class="products__item products__ice-cream">
+            <div class="products__box">
+                <picture>
+                    <source srcset="./images/ice-products-png/ice-cream-destop.png 1x, ./images/ice-products-png/ice-cream-destop-@2x.png 2x"
+                    media="(min-width: 1200px)">
+                   <source srcset="./images/ice-products-png/ice-cream-tablet.png 1x, ./images/ice-products-png/ice-cream-tablet-@2x.png 2x" 
+                   media="(min-width: 768px)">
+                   <source srcset="./images/ice-products-png/ice-cream-mobile.png 1x, ./images/ice-products-png/ice-cream-mobile-@2x.png 2x" 
+                   media="(max-width: 767px)">
 
-                        <source srcset="./images/ice-products-png/ice-cream-destop.png 1x, ./images/ice-products-png/ice-cream-destop-@2x.png 2x"
-                        media="(min-width: 1200px)">
-                       <source srcset="./images/ice-products-png/ice-cream-tablet.png 1x, ./images/ice-products-png/ice-cream-tablet-@2x.png 2x" 
-                       media="(min-width: 768px)">
-                       <source srcset="./images/ice-products-png/ice-cream-mobile.png 1x, ./images/ice-products-png/ice-cream-mobile-@2x.png 2x" 
-                       media="(max-width: 767px)">
-
-                       <img src="./images/ice-products-png/ice-cream-destop.png" alt="ice cream">
-                    </picture>
+                   <img src="./images/ice-products-png/ice-cream-destop.png" alt="ice-cream">
+                </picture>
+            </div>
+                   
                 
-                <img src="./images/png-products/arrow-png.png" alt="arrow">
-                <img src="./images/png-products/poits-png.png" alt="poits">
+                    <h3 class="products__tittle">ice cream</h3>
+                    <button type="button" class="products__poits products__btn">
+                            <img src="./images/png-products/poits-png.png" alt="poits" width="26" height="6">
+                    </button>
+                    <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button type="button" class="products__arrow products__btn">
+                        <img src="./images/png-products/arrow-png.png" alt="arrow" width="40" height="40">
+                    </button> 
+               
+              
+                   
+                   
+                    
             </li>
-            <li class="products__item">
-                <h3 class="products__tittle">ice coffee</h3>
-                <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            
+            <li class="products__item products__coffee">
+                <div class="products__box">
                     <picture>
-                        <source srcset="./images/products-webp/coffee-desktop-webp.webp 1x, ./images/products-webp/coffee-desktop-@2x-webp.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
-
-                        <source srcset="../images/ice-products-png/coffee-desktop.png 1x, ./images/ice-products-png/coffee-desktop-@2x.png 2x"
+                        <source srcset="./images/ice-products-png/coffee-desktop.png 1x, ./images/ice-products-png/coffee-desktop-@2x.png 2x"
                         media="(min-width: 1200px)">
                        <source srcset="./images/ice-products-png/coffee-tablet.png 1x, ./images/ice-products-png/coffee-tablet-@2x.png 2x" 
                        media="(min-width: 768px)">
                        <source srcset="./images/ice-products-png/coffee-mobile.png 1x, ./images/ice-products-png/coffee-mobile-@2x.png 2x" 
                        media="(max-width: 767px)">
 
-                       <img src="./images/ice-products-png/coffee-desktop.png" alt="ice coffee">
+                       <img src="./images/ice-products-png/coffee-desktop.png" alt="ice-coffee">
                     </picture>
+                </div>
                 
-                <img src="./images/png-products/arrow-png.png" alt="arrow">
-                <img src="./images/png-products/poits-png.png" alt="poits">
-            </li>
-            <li class="products__item">
-                <h3 class="products__tittle">milkshakes</h3>
-                <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <picture>
-                        <source srcset="./images/products-webp/milkshakes-desktop-webp.webp 1x, ./images/products-webp/milkshakes-desktop-@2x-webp.webp 2x"
-                        media="(min-width: 1200px)"
-                        type="image/webp">
+                  
 
+                    <h3 class="products__tittle">ice coffee</h3>
+                    <button type="button" class="products__poits">
+                        <img src="./images/png-products/poits-png.png" alt="poits" width="26" height="6">
+                    </button>
+
+                    <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button type="button" class="products__arrow">
+                        <img src="./images/png-products/arrow-png.png" alt="arrow" width="40" height="40">
+                    </button>
+                
+            </li>
+            <li class="products__item products__milkshakes">
+                
+                <div class="products__box">
+                    <picture>
                         <source srcset="./images/ice-products-png/milkshakes-desktop.png 1x, ./images/ice-products-png/milkshakes-desktop-@2x.png 2x"
                         media="(min-width: 1200px)">
                        <source srcset="./images\ice-products-png/milkshakes-tablet.png 1x, ./images/ice-products-png/milkshakes-tablet-@2x.png 2x" 
@@ -63,9 +74,17 @@
 
                        <img src="./images/ice-products-png/milkshakes-desktop.png" alt="milkshakes">
                     </picture>
-                
-                <img src="./images/png-products/arrow-png.png" alt="arrow">
-                <img src="./images/png-products/poits-png.png" alt="poits">
+                </div>
+                    
+
+                    <h3 class="products__tittle">milkshakes</h3>
+                    <button type="button" class="products__poits">
+                        <img src="./images/png-products/poits-png.png" alt="poits" width="26" height="6">
+                    </button>
+                    <p class="products__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <button type="button" class="products__arrow">
+                        <img src="./images/png-products/arrow-png.png" alt="arrow" width="40" height="40">
+                    </button>
             </li>
 
 
