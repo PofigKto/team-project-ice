@@ -28,14 +28,20 @@
     background-color: #fff;
     color: var(--basic-title-color);
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: #ECEBEB;
     }
 }
 
 .btn-red {
 
-    background-color: #D41342;
+    background-color: var(--basic-title-color);
     color: #fff;
+
+    &:hover,
+    &:focus {
+        background-color: #9b0e31;
+    }
 
 }
