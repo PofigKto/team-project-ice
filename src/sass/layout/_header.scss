@@ -4,6 +4,7 @@
     z-index: 1;
     margin-top: 36px;
 }
+
 .page-header__container {
     display: flex;
     align-items: center;
@@ -45,7 +46,7 @@
 @media screen and (min-width: 768px) {
 
     .page-header__container {
-        justify-content:space-between
+        justify-content: space-between;
     }
 
     .header-buttons__container {
@@ -66,7 +67,8 @@
 
 .page-header__container {
         display: flex;
-        justify-content:space-between
+        justify-content: space-between;
+
     }
 
     .navigation__list {
