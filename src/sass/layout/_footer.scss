@@ -61,7 +61,7 @@
     font-size: 12px;
     line-height: 22px;
     text-align: right;
-    color: #000000;
+    color: var(--text-black-color);
 }
 
 .footer-contact__tel {
@@ -71,13 +71,13 @@
     font-size: 12px;
     line-height: 22px;
     text-align: right;
-    color: #D41443;
+    color: var(--basic-title-color);
 }
 
 .footer-rights {
     padding-top: 16px;
     margin-bottom: 3px;
-    border-top: 1px solid #E1E1E1;
+    border-top: 1px solid var(--footer-line-color);
 
 }
 
@@ -88,13 +88,13 @@
     font-size: 14px;
     line-height: 21px;
     text-align: center;
-    color: #907E82;
+    color: var(--contacts-color);
 }
 
 
 @media screen and (max-width: 767px) {
     .footer__container {
-        width: 480px;
+        width: 320px;
     }
 }
 
