@@ -111,10 +111,6 @@
 
 
 
-
-
-
-
 /*================================= HERO ===============================*/
   .hero__item-numbers-text {
       font-family: 'DM Sans';
@@ -174,12 +170,25 @@
     &:not(:last-child) {
         margin-right: 8px;
     }
+    &:hover,
+    &:focus{
+        background-color: #e8587c;
+    
+    }
+.hero__item-focus-gr:hover,
+.hero__item-focus-gr:focus{
+background-color: #ECEBEB;
+}
 
 }
 
 .hero__item-white {
     background-color: #FFFFFF;
     color: var(--basic-title-color);
+    &:hover,
+    &:focus {
+            background-color: #ECEBEB;
+        }
 }
 
 .hero__link-red {
@@ -194,7 +203,8 @@
 
 @media screen and (max-width:767px) {
     .hero__conteiner {
-            height: 502px;}
+    height: 502px;
+        padding-top: 8px;}
     .hero__text {
         display: none;
     }
@@ -231,16 +241,21 @@
 }
 
 @media screen and (max-width:1280px) {
-    .hero__conteiner {
-            height: 416px;
-        }
-
+   
     .women-picture {
         width: 190px;
         height: 150px;
         position: absolute;
         top: 265px;
         right:0;
+
+        transition-property: transform;
+        transition-duration: 500ms;
+
+        &:hover,
+        &:focus{
+transform: scale(1.5);
+        }
     }
 
     .milk-picture {
@@ -249,6 +264,13 @@
         position: absolute;
         top: 245px;
         left: 0;
+        transition-property: transform;
+            transition-duration: 500ms;
+        
+            &:hover,
+            &:focus {
+                transform: scale(1.5);
+            }
     }
 }
 
@@ -258,6 +280,9 @@
         margin-left: auto;
         width: 100%;
         position: relative;
+        height: 416px;
+        padding-top: 20px;
+        
     }
 
     .hero {
@@ -297,7 +322,9 @@
         position: absolute;
         top: 285px;
         left: 150px;
-    }
+
+        }
+    
 
     .hero__menu-numbers {
         font-family: 'Titan One';
@@ -312,36 +339,37 @@
         color: var(--basic-title-color);
 
     }
-
+.hero__item-text{
+    position: relative;
+    z-index: 1;
+    &::after {
+            position: absolute;
+            top: 0;
+            right: -5;
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            z-index: -1;
+        }
+}
   
 
     .hero__item-numbers {
-        position: relative;
-        z-index: 1;
-        &::after {
-            position: absolute;
-            top: -10;
-            right: -10;
-            content: '';
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-            -moz-border-radius: 15px;
-            -webkit-border-radius: 15px;
-            border-radius: 15px;
-            background-color: #FFFFFF;
-            z-index: 3;
-        }
-
-        &:not(:last-child) {
+         &:not(:last-child) {
             margin-bottom: 17px;
         }
 
     }
 
-}
+
 
 .hero__button {
+    cursor: pointer;
     position: absolute;
     background-color: transparent;
     border: transparent;
@@ -349,7 +377,7 @@
     top: 50;
     left: -8;
 
-}
+}}
 
 @media screen and (min-width:1280px) {
     .hero__item-numbers-text {
@@ -360,6 +388,7 @@
     }
        .hero__title{
         font-size: 38px;
+        margin-bottom: 24px;
  }
 
 .hero__title-part {
@@ -384,6 +413,7 @@ font-size: 46px;
         width: 100%;
         height: 664px;
         position: relative;
+        padding-top: 60px;
     }
 
     .hero {
@@ -424,7 +454,16 @@ font-size: 46px;
         height: 241px;
         position: absolute;
         top: 423px;
-        right: 0
+        right: 0;
+
+        transition-property: transform;
+            transition-duration: 500ms;
+        
+            &:hover,
+            &:focus {
+                transform: scale(1.5);
+            }
+        }
     }
 
     .milk-picture {
@@ -433,9 +472,37 @@ font-size: 46px;
         position: absolute;
         top: 388px;
         left:0;
-    }
+
+        transition-property: transform;
+            transition-duration: 500ms;
+        
+            &:hover,
+            &:focus {
+                transform: scale(1.5);
+            }
+        }
+    
 
     .hero__button {
         margin-top: 20px;
     }
-}
+    .hero__item:not(:last-child) {
+      margin-right: 12px;
+          }
+
+                  .hero__item-text {
+                    
+        
+                      &::after {
+                        top: 0;
+                            right: -10;
+                            content: '';
+                            display: inline-block;
+                          width: 30px;
+                          height: 30px;
+                        -moz-border-radius: 15px;
+                            -webkit-border-radius: 15px;
+                            border-radius: 15px;
+                          
+                      }
+                  }
