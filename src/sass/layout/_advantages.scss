@@ -66,23 +66,16 @@
     background-size: cover;
 }
 
-
-
 @media screen and (max-width: 767px) {
     .advantages__item:not(:last-child) {
         margin-bottom: 32px;
     }
 }
 
-
 @media screen and (min-width: 768px) {
     .advantages {
         display: flex;
         gap: 80px;
-    }
-
-    .advantages__item {
-        padding-bottom: 0px;
     }
 
     .advantages__title {
