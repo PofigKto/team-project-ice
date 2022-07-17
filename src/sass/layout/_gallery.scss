@@ -29,6 +29,7 @@
     height: 44px;
     float: left;
     margin-bottom: 1.5px;
+    cursor: pointer;
 
     @media screen and (min-width: 350px) {
         width: 48px;
@@ -84,6 +85,7 @@
 .grid-item--gigante {
     width: 87px;
     height: 87px;
+    cursor: pointer;
 
     @media screen and (min-width: 350px) {
         width: 91px;
