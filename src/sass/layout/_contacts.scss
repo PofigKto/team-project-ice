@@ -139,67 +139,6 @@ justify-content: center;
 flex-direction:column;
 }
 
-// _______________Modal Window _____________
-
-.backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); }
-
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    .modal {
-        transform: translate(-50%, -50%) scale(1.1);
-        opacity: 0;
-    }
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
-    background: white;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 40px;
-}
-
-.modal-close-button { 
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: transparent;
-    padding: 0;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    }
-
-.modal-close-button-icon {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover {
-        fill: #2196F3;
-    }
-}
-
-
-// _______________//Modal Window _____________
-
 // ________________Media_________________
 
 @media screen and (min-width: 768px) {
@@ -211,7 +150,8 @@ flex-direction:column;
     .contacts_list__section:not(:last-child) {
      margin-right: 32px;   
     }
-
+    .contacts_list__section {margin-bottom: 0;}
+    
     .contacts_btn {
        flex-direction: row;
        padding-bottom: 40px;
@@ -221,6 +161,8 @@ flex-direction:column;
     width: 73px;
     height: 28px;
     margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.87;    
 
     }
 
@@ -234,7 +176,9 @@ flex-direction:column;
     .contacts_list__cafe_type_foodtruck {
     width: 138px;
     height: 28px;
-    margin-bottom: 32px
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.87;  
     }
 
     .contacts_list__cafe_schedule::after {
