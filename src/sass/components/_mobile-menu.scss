@@ -10,7 +10,7 @@
 
 .menu {
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     height: 100vh;
     overflow-y: auto;
@@ -18,7 +18,7 @@
     width: 254px;
     background-color: var(--background-mobile-open);
     transition: all 0.3s ease-in-out;
-    transform: translateX(-100vw);
+    transform: translateX(100vw);
 }
 
 .menu.active {
