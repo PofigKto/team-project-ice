@@ -1,6 +1,10 @@
-.contacts__container {
-    background-image: linear-gradient(to top, #FFF5F6 80%, #FFFFFF 20%);
+.contacts {
+    background-image: linear-gradient(to top, var(--background-section) 80%, #FFFFFF 20%);
  }
+
+.contacts_list {
+    margin: 0 auto;
+}
 
 .contacts_list__section {
 background: #FFFFFF;
@@ -16,7 +20,7 @@ margin-bottom: 32px;
     border: 1px solid transparent;
     width: 80px;
     height: 16px;
-    background: #F0D1A5;
+    background: var(--background-coffee);
     border-radius: 4px;
     font-size: 12px;
     line-height: 2.2;
@@ -33,7 +37,7 @@ margin-bottom: 32px;
     border: 1px solid transparent;
     width: 130px;
     height: 16px;
-    background: #C2E297;
+    background: var(--background-milkshakes);
     border-radius: 4px;
     font-size: 12px;
     line-height: 2.2;
@@ -57,10 +61,11 @@ margin-bottom: 24px;
 margin-top: 24px;
 }
 
-.contacts_list__cafe_description {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #907E82;
+.contacts_list__cafe_desription {
+font-size: 12px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--contacts-color);
 }
 
 .contacts_list__cafe_schedule::after {
@@ -86,21 +91,22 @@ color: #000000;
 .contacts_list__cafe_schedule_time {
 font-size: 12px;
 line-height: 1.8;
-color: #FFA5BA;
+color:var(--subtitle-color);
 }
 
 .cafe_contacts__link {
 display: block;
 font-size: 12px;
 line-height: 1.5;
-color: #907E82;
+color:var(--contacts-color);
 
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+
 }
 
 .cafe_contacts__link:hover,
 .cafe_contacts__link:focus {
-    color: #d41443;
+    color: var(--basic-title-color);
 }
 
 .contacts_list__city {
@@ -194,22 +200,93 @@ flex-direction:column;
 
 // _______________//Modal Window _____________
 
+// ________________Media_________________
+
 @media screen and (min-width: 768px) {
    
     .contacts_list {
         display: flex;
+        flex-wrap: no wrap; }
+
+    .contacts_list__section:not(:last-child) {
+     margin-right: 32px;   
     }
+
     .contacts_btn {
        flex-direction: row;
        padding-bottom: 40px;
     }
+
+    .contacts_list__cafe_type {
+    width: 73px;
+    height: 28px;
+    margin-bottom: 32px;
+
+    }
+
+    .contacts_list__cafe_desription {
+        font-size: 14px;}
+
+    .contacts_list__city {
+        font-size: 14px
+    }
+    
+    .contacts_list__cafe_type_foodtruck {
+    width: 138px;
+    height: 28px;
+    margin-bottom: 32px
+    }
+
+    .contacts_list__cafe_schedule::after {
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+    .contacts_list__cafe_schedule_day {
+        font-size: 14px;
+    }
+
+    .contacts_list__cafe_schedule_time {
+        font-size: 14px;
+    }
+
+    .cafe_contacts__link {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
 
     .btn {margin-right: 12px;}
     .btn-red {
         margin-bottom: 0px;
     }
 
-
     .contacts_list {margin-bottom: 60px;}
 
 }
+
+
+
+
+@media screen and (min-width: 1200px) {
+
+    .contacts_list__cafe_schedule_day {
+        font-size: 16px;
+    }
+
+    .contacts_list__cafe_schedule_time {
+        font-size: 16px;
+    }
+
+    .contacts_list__cafe_desription {
+        font-size: 16px;
+    }
+
+    .cafe_contacts__link {
+        font-size: 16px;
+    }
+        
+
+      
+}
+// ________________//Media_________________
