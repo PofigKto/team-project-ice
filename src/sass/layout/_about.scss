@@ -1,12 +1,11 @@
 .about {
     background-color: var(--background-section);
-    
+    position: relative;
 }
 
-.about__container {
-   
-   position: relative;
-}
+// .about__container {
+//    position: relative;
+// }
 
 .about__subtitle {
     font-family: 'Titan One';
@@ -61,13 +60,13 @@
 .about__milk {
 
     position: absolute;
+
     top: 67%;
     left: 10px;
     width: 90%;
  
 }
 .about__list {
-
     position: relative;
    
 }
@@ -231,8 +230,9 @@
 
     .about__milk {
         display: block;
-        top: 26%;
-        left: 0;
+
+        top: 119px;
+        left: -2px;
         width: 100%;
     }
 
