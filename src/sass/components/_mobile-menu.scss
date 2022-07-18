@@ -1,24 +1,34 @@
+.mobile-window {
+    position: relative;
+    z-index: 99;
+}
 .modal-close-btn-icon {
-    margin-top: 20px;
-    margin-right: 32px;
-    margin-bottom: 24px;
+    position: absolute;
+    
+    top: 20px;
+    right: 32px;
+  
     width: 14px;
     height: 14px;
+
     cursor: pointer;
 
 }
 
 .menu {
     position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    width: 254px;
-    background-color: var(--background-mobile-open);
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-100vw);
+        right: 0;
+        top: 0;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: 254px;
+        background-color: var(--background-mobile-open);
+        transition: all 0.3s ease-in-out;
+        transform: translateX(100vw);
+        z-index: 100;
+
+    padding: 58px 20px;
 }
 
 .menu.active {
@@ -29,15 +39,8 @@
     text-align: right;
 }
 
-.menu__link {
-    padding-left: 20px;
-    padding-bottom: 11px;
-}
 
-.menu__link:hover,
-.menu__link:focus {
-    color: var(--basic-title-color);
-}
+
 
 .menu__link {
     font-family: "DM Sans";
@@ -48,11 +51,25 @@
     display: flex;
     align-items: center;
     color: #ffffff;
+    
+
+    padding-top: 13px;
+    padding-bottom: 13px;
+
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
+
+    &:hover,
+    &:focus {
+        color: var(--basic-title-color);
+    }
+
 }
 
+
 .menu__button {
-    margin-left: 34px;
-    margin-right: 34px;
+    
+  
     margin-bottom: 20px;
 }
 
@@ -66,24 +83,29 @@
     border-radius: 22px;
     border: none;
 
+    margin: 0 auto;
+
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 1.31;
+
     display: flex;
     align-items: center;
     text-align: center;
+    
     color: var(--basic-title-color);
 }
 
 .buy-now-button svg {
-    width: 6px;
-    height: 19px;
+    width: 8px;
+    height: 20px;
     fill: none;
+
     stroke: var(--basic-title-color);
     stroke-width: 6.4px;
-    margin-left: 12px;
+    margin-left: 21.75px;
 }
 
 button {
