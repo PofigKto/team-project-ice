@@ -1,4 +1,4 @@
-.advantages__section {
+.section__advantages {
     background-color: var(--background-section);
     padding-top: 0px;
     padding-bottom: 0px;
@@ -29,7 +29,7 @@
     // line-height: 20px;
     letter-spacing: 0.02em;
 
-    color: #000000;
+    color: var(--text-black-color);
 }
 
 .advantages__icon-1::before {
@@ -42,6 +42,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 120%;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/advantages-icons/icon-adv-1@2x.png);
+    }
 }
 
 .advantages__icon-2::before {
@@ -53,6 +58,11 @@
     background-image: url(../images/advantages-icons/icon-adv-2.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages-icons/icon-adv-2@2x.png);
+    }
 }
 
 .advantages__icon-3::before {
@@ -64,6 +74,11 @@
     background-image: url(../images/advantages-icons/icon-adv-3.png);
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages-icons/icon-adv-3@2x.png);
+    }
 }
 
 @media screen and (max-width: 767px) {
