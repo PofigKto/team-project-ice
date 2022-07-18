@@ -1,9 +1,10 @@
 
 /*================================HEADER===================================*/
 
-.page-header{
+.page-header {
     margin-bottom: 136px;
 }
+
 .page-header__container {
     display: flex;
     align-items: center;
@@ -39,15 +40,17 @@
         background-color: #ECEBEB;
     }
 }
-.about__icon{
+
+.about__icon {
     margin-left: 12px;
 }
 
 
 @media screen and (min-width: 768px) {
-.page-header {
+    .page-header {
         margin-bottom: 20px;
     }
+
     .page-header__container {
         justify-content: space-between;
     }
@@ -64,9 +67,10 @@
 }
 
 @media screen and (min-width: 1280px) {
-.page-header {
+    .page-header {
         margin-bottom: 60px;
     }
+
     .page-header__container {
         display: flex;
         justify-content: space-between;

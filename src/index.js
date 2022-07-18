@@ -1,11 +1,12 @@
-const $buttonOpen = document.querySelector('.mobile-menu__open-button'),
-      $buttonClose = document.querySelector('.menu__close'),
-      $menu = document.querySelector('.menu');
-$buttonOpen.onclick=(e)=>{
-    e.preventDefault()
-    $menu.classList.toggle('active')
-}
-$buttonClose.onclick=(e)=>{
-    e.preventDefault()
-    $menu.classList.toggle('active')
-}
+(() => {
+  const refs = {
+    openMenuBtn: document.querySelector('[data-menu-open]'),
+    closeMenuBtn: document.querySelector('[data-menu-close]'),
+    menu: document.querySelector('[data-menu]'),
+  };
+  refs.openMenuBtn.addEventListener('click', toggleModal);
+  refs.closeMenuBtn.addEventListener('click', toggleModal);
+  function toggleModal() {
+    refs.menu.classList.toggle('is-open');
+    }
+})();
