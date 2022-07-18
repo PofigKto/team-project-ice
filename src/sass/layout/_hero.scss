@@ -61,9 +61,6 @@
     }
 }
 
-
-
-
 @media screen and (min-width: 1280px) {
 .page-header {
         margin-bottom: 60px;
@@ -173,6 +170,9 @@
        background: var(--basic-title-color);
        border-radius: 20px;
 
+transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
        &:hover,
        &:focus {
@@ -190,7 +190,6 @@
 }
 
 }
-
 
    .hero__item-white {
        background-color: #FFFFFF;
