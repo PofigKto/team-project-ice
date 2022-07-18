@@ -5,11 +5,12 @@
     transform: translate(-50%, -50%);
     box-sizing: border-box;
 
-    padding: 20px 10px;
+    padding: 40px 10px;
 
     width: 30%;
     max-height: 100%;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
 
 
 
@@ -47,6 +48,10 @@
     fill: currentColor;
 }
 
+.modal__list {
+    margin-bottom: 15px;
+}
+
 .modal__item {
 
     width: 70%;
@@ -55,7 +60,7 @@
     border-radius: 4px;
     padding: 10px;
 
-    background-color: var(--background-section);
+    background-color: var(--footer-line-color);
 
     &:not(:last-child) {
         margin-bottom: 15px;
@@ -90,3 +95,4 @@
 
         letter-spacing: 0.04em;
 }
+
