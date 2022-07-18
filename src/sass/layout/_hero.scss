@@ -172,18 +172,25 @@
        line-height: 1.25;
        background: var(--basic-title-color);
        border-radius: 20px;
+
+
        &:hover,
        &:focus {
            background-color: #e8587c;
 
        }
-
-       .hero__item-focus-gr:hover,
-       .hero__item-focus-gr:focus {
-           background-color: #ECEBEB;
-       }
-
    }
+.hero__item-focus-gr {
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+    background-color: #ECEBEB;
+}
+
+}
+
 
    .hero__item-white {
        background-color: #FFFFFF;
