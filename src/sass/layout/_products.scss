@@ -1,10 +1,7 @@
-
 .label-text {
+    @include font(18px, 400, 21px);
     font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
     text-align: center;
     text-transform: uppercase;
     color: var(--subtitle-color);
@@ -12,11 +9,9 @@
 }
 
 .products__section-tittle {
+    @include font(34px, 400, 39px);
     font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -25,28 +20,22 @@
 }
 
 .products__description {
+    @include font(14px, 700, 21px);
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-family: 'DM Sans';
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
     color: var(--card-tittle-color);
     width: 200px;
-    
-  
 }
 
 .products__tittle {
+    @include font(20px, 400, 23px);
     font-family: 'Titan One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -55,13 +44,14 @@
 
 .products__ice-cream {
     border-radius: 24px;
-    background-color: var(--background-cream);
-    
+    background-color: var(--background-cream);   
 }
+
 .products__coffee {
     border-radius: 24px;
     background-color: var(--background-coffee);
 }
+
 .products__milkshakes {
     border-radius: 24px;
     background-color: var(--background-milkshakes);
@@ -76,9 +66,9 @@
 .products__item {
     width: 280px;
     padding: 160px 40px 40px;
-    position: relative;
-   
+    position: relative;  
 }
+
 .products__poits::after {
     content: '';
     display: block;
@@ -87,9 +77,9 @@
     background-repeat: no-repeat;
     width: 26px;
     height: 6px;
-    margin: 32px auto;
-  
+    margin: 32px auto; 
 }
+
 .products__arrow::after {
     content: '';
     display: block;
@@ -102,6 +92,7 @@
     margin-left: auto;
     margin-top: 32px;
 }
+
 .products__ice-cream::before {
     content: '';
     background-image: url(../images/ice-products-png/ice-cream-mobile.png);
@@ -138,32 +129,30 @@
     left: 50%;
 }
 
-
 @media screen and (max-width: 767px) {
     .products__item:not(:last-child){
-        margin-bottom: 140px;
-        
+        margin-bottom: 140px;    
     }
 }
 
 @media screen and (min-width: 768px) {
     .label-text {
-        font-size: 26px;
-        line-height: 1.15;
+        @include font(26px, 400, 30px);
     }
+
     .products__section-tittle {
-        font-size: 48px;
-        line-height: 1.14;
+        @include font(48px, 400, 55px);
     }
+
     .products__description {
+        @include font(14px, 700, 25px);
         width: 160px;
-        font-size: 14px;
-        line-height: 1.78;
     }
+
     .products__tittle {
-        font-size: 20px;
-        line-height: 1.15;
+        @include font(20px, 400, 23px);
     }
+
     .products__item {
         width: 224px;
         padding: 118px 32px 40xp;
@@ -171,6 +160,7 @@
             margin-right: 16px;
         }
     }
+
     .products__ice-cream::before {
         content: '';
         background-image: url(../images/ice-products-png/ice-cream-tablet.png);
@@ -180,8 +170,6 @@
         transform: translateX(-50%);
         left: 50%;
     }
-
-
 
     .products__coffee::before {
         content: '';
@@ -201,29 +189,28 @@
         top: -25%;
         transform: translateX(-50%);
         left: 50%;
-    }
-   
-     
+    }     
 }
+
 @media screen and (min-width: 1200px) {
     .label-text {
-        font-size: 30px;
-        line-height: 1.13;
+        @include font(30px, 400, 34px);
     }
+
     .products__section-tittle {
-        font-size: 58px;
-        line-height: 66px;
+        @include font(58px, 400, 66px);
         margin-bottom: 281px;
     }
+
     .products__description {
+        @include font(16px, 700, 28px);
         width: 241px;
-        font-size: 16px;
-        line-height: 1.75;
     }
+
     .products__tittle {
-        font-size: 30px;
-        line-height: 1.13;
+        @include font(30px, 400, 34px);
     }
+
     .products__item {
         width: 368px;
         padding: 165px 64px 60px;
@@ -231,6 +218,7 @@
             margin-right: 32px;
         }
     }
+
     .products__ice-cream::before {
         content: '';
         background-image: url(../images/ice-products-png/ice-cream-desktop.png);
@@ -239,7 +227,6 @@
         top: -52%;
         transform: translateX(-50%);
         left: 50%;
-    
     }
    
     .products__coffee::before {
@@ -260,6 +247,5 @@
         top: -52%;
         transform: translateX(-50%);
         left: 50%;
-    }
-    
+    }   
 }

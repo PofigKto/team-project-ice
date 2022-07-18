@@ -8,10 +8,8 @@
 // }
 
 .about__subtitle {
+    @include font(18px, 400, 21px);
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -22,10 +20,8 @@
 }
 
 .about__title {
+    @include font(34px, 400, 39px);
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -35,7 +31,6 @@
     margin-bottom: 32px;
 }
 
-
 .about__cow-img {
     height: auto;
     max-width: 100%;
@@ -43,8 +38,6 @@
 
     margin: 0 auto;
     margin-bottom: 40px;
-
-
 }
 
 .about__item {
@@ -53,60 +46,48 @@
     &:not(:last-child) {
         margin-bottom: 26px;
     }
-
 }
 
-
 .about__milk {
-
     position: absolute;
 
     top: 67%;
     left: 10px;
-    width: 90%;
- 
-}
-.about__list {
-    position: relative;
-   
+    width: 90%; 
 }
 
+.about__list {
+    position: relative;   
+}
 
 .about-list__text {
     margin-bottom: 20px;
 }
 
 .about__description {
+    @include font(12px, 500, 19px);
     font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
 
-    color: #000;
+    color: var(--text-black-color);
 }
 
 .about__text {
+    @include font(12px, 500, 19px);
     font-family: 'DM Sans';
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.58;
 
     color: var(--contacts-color);
 }
 
 .about__btn {
-    font-size: 14px;
-    line-height: 1.28;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include font(14px, 700, 18px);
+    @extend %ideal-centr;
     text-align: center;
 
     width: 176px;
 
-
     color: var(--basic-title-color);
 }
+
 .btn__text {
     margin-right: 13px;
 }
@@ -118,18 +99,15 @@
     fill: currentColor;
 }
 
-
 @media screen and (min-width: 768px) {
     .about__subtitle {
-        font-size: 26px;
-        line-height: 1.15;
+        @include font(26px, 400, 30px);
 
         margin-bottom: 16px;
     }
 
     .about__title {
-        font-size: 48px;
-        line-height: 1.14;
+        @include font(48px, 400, 55px);
 
         margin-bottom: 40px;
     }
@@ -140,7 +118,6 @@
         &:not(:last-child) {
             margin-bottom: 18px;
         }
-
     }
 
     .about-list__text {
@@ -151,73 +128,56 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
     }
 
     .about__cow-img {
         margin: 0px;
-
     }
 
     .about__description {
-        font-size: 14px;
-        line-height: 1.78;
+        @include font(14px, 500, 25px);
 
         margin-bottom: 18px;
     }
 
     .about__text {
+        @include font(14px, 500, 25px);
         font-family: 'DM Sans';
-    
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 1.78;
-         
-            letter-spacing: 0.04em;
+        letter-spacing: 0.04em;
     }
 
     .about__milk {
         display: none;
     }
-
 }
 
-
-@media screen and (min-width: 1200px) {
-   
+@media screen and (min-width: 1200px) {   
     .about__subtitle {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 1.13;
+        @include font(30px, 400, 34px);
     }
 
     .about__title {
-        font-size: 58px;
-        font-weight: 400;
-        line-height: 1.13;
+        @include font(58px, 400, 66px);
 
         margin-bottom: 60px;
     }
 
-    .about__description-container {
-        
+    .about__description-container {        
         justify-content: left;
     }
+
     .about__cow-img {
         display: block;
         margin-right: 99px;
     }
+
     .about__description {
-        font-size: 16px;
-        line-height: 1.75;
+        @include font(16px, 500, 28px);
     }
 
     .about__text {
-        font-size: 14px;
-        line-height: 1.92;
+        @include font(14px, 500, 27px);
     }
-
-    
 
     .about__item {
         width: 463px;
@@ -225,7 +185,6 @@
         &:not(:last-child) {
             margin-bottom: 32px;
         }
-
     }
 
     .about__milk {
@@ -235,5 +194,4 @@
         left: -2px;
         width: 100%;
     }
-
 }
