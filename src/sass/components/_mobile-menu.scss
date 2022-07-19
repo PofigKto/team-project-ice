@@ -1,16 +1,21 @@
-.mobile-window {
+.mobile__window {
     position: relative;
     z-index: 99;
 }
 
 
-.modal-close-btn-icon {
+.modal-close-btn__icon {
     position: absolute;
     top: 20px;
     right: 32px;
     width: 14px;
     height: 14px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: #9b0e31;
+    }
 
 }
 
@@ -72,7 +77,7 @@
     margin-bottom: 20px;
 }
 
-.buy-now-button {
+.buy-now__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -95,9 +100,13 @@
     text-align: center;
     
     color: var(--basic-title-color);
+    &:hover,
+    &:focus {
+        background-color: #ECEBEB;
+    }
 }
 
-.buy-now-button svg {
+.buy-now__button svg {
     width: 8px;
     height: 20px;
     fill: none;
