@@ -36,7 +36,8 @@
     color: var(--basic-title-color);
 
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: #ECEBEB;
     }
 }
